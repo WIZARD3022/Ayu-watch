@@ -20,10 +20,10 @@ if not os.path.exists(DATA_DIR):
 
 LAST_ACTIVE = os.path.join(DATA_DIR, "last_active.txt")
 QUESTION_FILE = os.path.join(DATA_DIR, "questions.json")
-PROFILE_CSV = os.getenv("PROFILE_CSV", "profile.csv")
+PROFILES_CSV = os.getenv("PROFILE_CSV", "profile.csv")
 
 # ensure profiles.csv exists
-if not os.path.exists(PROFILE_CSV):
+if not os.path.exists(PROFILES_CSV):
     df = pd.DataFrame(columns=["profile_id", "name", "gender", "age", "most_choice", "created_at"])
     df.to_csv(PROFILES_CSV, index=False)
 
