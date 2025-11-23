@@ -209,5 +209,5 @@ def download_profile(profile_id):
 
 if __name__ == "__main__":
     app.run(host=os.getenv("FLASK_HOST"),
-            port=int(os.getenv("FLASK_PORT"),
+            port=int(os.getenv("FLASK_PORT")),
             debug=True)
