@@ -1,0 +1,31 @@
+<!-- templates/profile.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Profile {{profile.name}}</title>
+</head>
+<body>
+  <h1>{{profile.name}}</h1>
+  <p>Gender: {{profile.gender}} | Age: {{profile.age}} | Most choice: {{profile.most_choice}}</p>
+  <p><a href="/download_profile/{{profile.profile_id}}">Download profile Excel</a></p>
+
+  {% if graph_url %}
+    <h3>Waveform graph</h3>
+    <img src="{{graph_url}}" style="max-width:100%;height:auto;">
+  {% endif %}
+
+  <h3>Recent data</h3>
+  <table border="1" cellpadding="4" cellspacing="0">
+    <tr>
+      <th>timestamp</th><th>ir1</th><th>ir2</th><th>ir3</th><th>bpm</th><th>spo2</th><th>temp</th><th>label</th>
+    </tr>
+    {% for r in data %}
+      <tr>
+        <td>{{r.timestamp}}</td>
+        <td>{{r.ir1}}</td><td>{{r.ir2}}</td><td>{{r.ir3}}</td><td>{{r.bpm}}</td><td>{{r.spo2}}</td><td>{{r.temp}}</td><td>{{r.processed_label}}</td>
+      </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
