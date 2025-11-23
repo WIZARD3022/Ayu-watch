@@ -1,0 +1,29 @@
+<!-- templates/index.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Profiles - ESP32 Data Server</title>
+</head>
+<body>
+  <h1>ESP32 Profiles</h1>
+  <p><a href="/new_profile">Create new profile</a></p>
+
+  <h2>Existing profiles</h2>
+  <form method="post" action="/select_profile">
+    <select name="profile_id">
+      {% for p in profiles %}
+        <option value="{{p.profile_id}}">{{p.name}} ({{p.age}} / {{p.gender}}) - {{p.most_choice}}</option>
+      {% endfor %}
+    </select>
+    <button type="submit">Use selected profile (sets last active)</button>
+  </form>
+
+  <h3>Open profile</h3>
+  <ul>
+    {% for p in profiles %}
+      <li><a href="/profile/{{p.profile_id}}">{{p.name}} - view</a></li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
