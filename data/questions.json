@@ -1,0 +1,102 @@
+[
+    {
+        "question": "Body frame",
+        "options": ["Thin, underweight (A)", "Medium, muscular (B)", "Broad, well-built (C)"]
+    },
+    {
+        "question": "Skin texture",
+        "options": ["Dry, rough, cool (A)", "Soft, warm, may flush easily (B)", "Oily, smooth, thick (C)"]
+    },
+    {
+        "question": "Hair type",
+        "options": ["Dry, coarse, breaks easily (A)", "Fine, soft, early greying (B)", "Thick, oily, slow greying (C)"]
+    },
+    {
+        "question": "Facial features",
+        "options": ["Irregular, small or asymmetrical (A)", "Sharp, prominent, chiseled (B)", "Rounded, soft, large (C)"]
+    },
+    {
+        "question": "Eyes",
+        "options": ["Small, active, dry (A)", "Medium, sharp, reddish (B)", "Large, calm, clear (C)"]
+    },
+    {
+        "question": "Nails",
+        "options": ["Brittle, rough, cracked (A)", "Pinkish, sharp, flexible (B)", "Strong, smooth, thick (C)"]
+    },
+    {
+        "question": "Voice",
+        "options": ["Thin, shaky, fast (A)", "Sharp, commanding (B)", "Deep, slow, melodious (C)"]
+    },
+    {
+        "question": "Appetite",
+        "options": ["Irregular, changes daily (A)", "Strong, gets hungry often (B)", "Steady but mild (C)"]
+    },
+    {
+        "question": "Thirst",
+        "options": ["Low, drinks little (A)", "High, always thirsty (B)", "Moderate (C)"]
+    },
+    {
+        "question": "Digestion",
+        "options": ["Irregular, gas/bloating (A)", "Strong, may cause acidity (B)", "Slow but steady (C)"]
+    },
+    {
+        "question": "Bowel habits",
+        "options": ["Constipation or dry stools (A)", "Frequent loose stools (B)", "Regular, formed stools (C)"]
+    },
+    {
+        "question": "Sleep pattern",
+        "options": ["Light, disturbed (A)", "Moderate, refreshing (B)", "Deep, long-lasting (C)"]
+    },
+    {
+        "question": "Sweating",
+        "options": ["Minimal (A)", "Profuse, smelly (B)", "Moderate, no odor (C)"]
+    },
+    {
+        "question": "Menstrual flow (for females)",
+        "options": ["Scanty, irregular (A)", "Moderate, sometimes heavy (B)", "Regular, heavy, long (C)"]
+    },
+    {
+        "question": "Sexual drive",
+        "options": ["Fluctuating (A)", "Strong (B)", "Steady but slow (C)"]
+    },
+    {
+        "question": "Memory",
+        "options": ["Quick learner, forgetful (A)", "Sharp and focused (B)", "Slow learner, long retention (C)"]
+    },
+    {
+        "question": "Thinking pattern",
+        "options": ["Creative, scattered (A)", "Logical, sharp (B)", "Slow, methodical (C)"]
+    },
+    {
+        "question": "Temperament",
+        "options": ["Anxious, worried easily (A)", "Angry, ambitious (B)", "Calm, patient (C)"]
+    },
+    {
+        "question": "Speech",
+        "options": ["Fast, skips topics (A)", "Precise, argumentative (B)", "Slow, deliberate (C)"]
+    },
+    {
+        "question": "Decision-making",
+        "options": ["Hesitant, indecisive (A)", "Fast, confident (B)", "Thoughtful, slow but steady (C)"]
+    },
+    {
+        "question": "Response to stress",
+        "options": ["Nervous, hyperactive (A)", "Irritable, aggressive (B)", "Withdrawn, detached (C)"]
+    },
+    {
+        "question": "Reaction to seasons",
+        "options": ["Dislikes cold/windy weather (A)", "Dislikes heat and sun (B)", "Dislikes damp and cold (C)"]
+    },
+    {
+        "question": "Habits",
+        "options": ["Irregular, spontaneous (A)", "Organized, target-driven (B)", "Routine-loving, stable (C)"]
+    },
+    {
+        "question": "Social nature",
+        "options": ["Talks a lot, enthusiastic (A)", "Selective, dominating (B)", "Friendly, peaceful (C)"]
+    },
+    {
+        "question": "Dreams",
+        "options": ["Flying, falling, moving (A)", "Fire, violence, competition (B)", "Water, nature, stillness (C)"]
+    }
+]
