@@ -9,15 +9,18 @@ import pandas as pd
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
 DATA_DIR = "data"
 if not os.path.exists(DATA_DIR):
     os.makedirs(DATA_DIR)
 
-PROFILES_CSV = os.path.join(DATA_DIR, "profiles.csv")
 LAST_ACTIVE = os.path.join(DATA_DIR, "last_active.txt")
 QUESTION_FILE = os.path.join(DATA_DIR, "questions.json")
+PROFILE_CSV = os.getenv("PROFILE_CSV", "profile.csv")
 
 # ensure profiles.csv exists
 if not os.path.exists(PROFILES_CSV):
@@ -205,4 +208,6 @@ def download_profile(profile_id):
     return "No data", 404
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host=os.getenv("FLASK_HOST"),
+            port=int(os.getenv("FLASK_PORT"),
+            debug=os.getenv("DEBUG", "True") == "True")
